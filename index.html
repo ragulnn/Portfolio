@@ -3,237 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ragul - Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>Ragul M | DevOps & Cloud Engineer</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-        header {
-            background: white;
-            border-radius: 10px;
-            padding: 60px 40px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 3em;
-            color: #667eea;
-            margin-bottom: 10px;
-            letter-spacing: -1px;
-        }
-
-        .tagline {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .social-links {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            width: 45px;
-            height: 45px;
-            background: #667eea;
-            color: white;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 45px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            background: #764ba2;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .section {
-            background: white;
-            border-radius: 10px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .section h2 {
-            color: #667eea;
-            font-size: 2em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
-        }
-
-        .resume-container {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .resume-link {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .resume-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
-        }
-
-        .about-text {
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #555;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-card {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-            transition: all 0.3s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .skill-card h3 {
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
-        .skill-card p {
-            color: #666;
-            font-size: 0.95em;
-        }
-
-        footer {
-            text-align: center;
-            color: white;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        footer p {
-            opacity: 0.9;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            .section {
-                padding: 20px;
-            }
-
-            header {
-                padding: 40px 20px;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>👋 Hi, I'm Ragul</h1>
-            <p class="tagline">Building innovative solutions through code</p>
-            <div class="social-links">
-                <a href="https://github.com/ragulnn" title="GitHub">🔗</a>
-                <a href="https://linkedin.com" title="LinkedIn">in</a>
-                <a href="mailto:your.email@example.com" title="Email">✉️</a>
-            </div>
-        </header>
 
-        <div class="section">
-            <h2>📄 Resume</h2>
-            <div class="resume-container">
-                <p style="margin-bottom: 20px; color: #666;">View my complete resume and experience</p>
-                <a href="Ragul_Resume_Updated.pdf" download class="resume-link">📥 Download Resume</a>
-            </div>
-        </div>
+<!--================ NAVBAR ================-->
 
-        <div class="section">
-            <h2>👨‍💻 About Me</h2>
-            <p class="about-text">
-                I'm a passionate developer with a strong focus on creating elegant and efficient solutions. 
-                With a background in full-stack development, I enjoy working on diverse projects that challenge 
-                me to learn and grow. I'm committed to writing clean, maintainable code and collaborating with 
-                teams to deliver exceptional results.
-            </p>
-        </div>
+<nav>
+    <div class="logo">Ragul<span>.</span></div>
 
-        <div class="section">
-            <h2>🛠️ Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Backend</h3>
-                    <p>Node.js, Express, Python, SQL</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools & DevOps</h3>
-                    <p>Git, Docker, CI/CD, Linux</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Databases</h3>
-                    <p>MySQL, MongoDB, PostgreSQL</p>
-                </div>
-            </div>
-        </div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-        <footer>
-            <p>&copy; 2026 Ragul. All rights reserved.</p>
-            <p>Built with ❤️ and clean code</p>
-        </footer>
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
     </div>
+</nav>
+
+<!--================ HERO SECTION ================-->
+
+<section id="home" class="hero">
+
+    <div class="hero-left">
+
+        <h3>Hello 👋 I'm</h3>
+
+        <h1>Ragul M</h1>
+
+        <h2>
+            <span id="typing"></span>
+        </h2>
+
+        <p>
+            DevOps & Cloud Engineer passionate about Kubernetes,
+            Azure, Terraform, CI/CD, Platform Engineering,
+            AI-powered Cloud Automation and Cloud Native Technologies.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn">
+                View Projects
+            </a>
+
+            <a href="Ragul_M_Resume.pdf"
+               target="_blank"
+               class="btn-outline">
+                Download Resume
+            </a>
+
+        </div>
+
+        <div class="social-icons">
+
+            <a href="https://github.com/ragulnn" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/ragul-m-77b731297"
+               target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:ragulm175@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img src="assets/profile.png" alt="Profile">
+
+    </div>
+
+</section>
+
+<!--================ ABOUT ================-->
+
+<section id="about">
+
+    <div class="section-title">
+        About Me
+    </div>
+
+    <div class="about-card">
+
+        <p>
+
+            DevOps and Cloud Engineer with hands-on experience
+            in Microsoft Azure, Kubernetes, Infrastructure as Code,
+            Docker, Azure DevOps, CI/CD, Monitoring,
+            Observability and Platform Engineering.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Built <strong>Kubepilot AI</strong>,
+            an AI-powered Kubernetes troubleshooting platform
+            that combines Kubernetes, Prometheus,
+            Loki and Jaeger to perform intelligent
+            root cause analysis.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--================ SKILLS ================-->
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-box">
+<i class="fa-brands fa-microsoft"></i>
+<h3>Microsoft Azure</h3>
+</div>
+
+<div class="skill-box">
+<i class="fa-solid fa-dharmachakra"></i>
+<h3>Kubernetes</h3>
+</div>
+
+<div class="skill-box">
+<i class="fa-brands fa-docker"></i>
+<h3>Docker</h3>
+</div>
+
+<div class="skill-box">
+<i class="fa-solid fa-code-branch"></i>
+<h3>Azure DevOps</h3>
+</div>
+
+<div class="skill-box">
+<i class="fa-solid fa-cubes"></i>
+<h3>Terraform</h3>
+</div>
+
+<div class="skill-box">
+<i class="fa-brands fa-python"></i>
+<h3>Python</h3>
+</div>
+
+<div class="skill-box">
+<i class="fa-solid fa-terminal"></i>
+<h3>Linux</h3>
+</div>
+
+<div class="skill-box">
+<i class="fa-solid fa-chart-line"></i>
+<h3>Prometheus</h3>
+</div>
+
+<div class="skill-box">
+<i class="fa-solid fa-chart-area"></i>
+<h3>Grafana</h3>
+</div>
+
+<div class="skill-box">
+<i class="fa-solid fa-network-wired"></i>
+<h3>Ansible</h3>
+</div>
+
+</div>
+
+</section>
+
+<!--================ PROJECTS ================-->
+
+<section id="projects">
+
+<h2 class="section-title">
+
+Projects
+
+</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+
+<h3>Kubepilot AI</h3>
+
+<p>
+
+AI-powered Kubernetes Incident Investigation Platform
+using Kubernetes, Prometheus,
+Loki, Jaeger and Ollama.
+
+</p>
+
+<a href="https://github.com/ragulnn/kubepilot-ai"
+target="_blank">
+
+View Project
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>Azure Kubernetes CI/CD</h3>
+
+<p>
+
+Designed automated Azure DevOps pipelines
+to build, test and deploy
+applications to AKS.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Infrastructure Automation</h3>
+
+<p>
+
+Provisioned Azure Infrastructure
+using Terraform reusable modules
+and workspaces.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Monitoring & Observability</h3>
+
+<p>
+
+Prometheus • Grafana • Loki • Jaeger
+Azure Monitor • ELK Stack
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ CERTIFICATIONS ================-->
+
+<section id="certifications">
+
+<h2 class="section-title">
+
+Certification
+
+</h2>
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>
+
+Microsoft Azure Fundamentals (AZ-900)
+
+</h3>
+
+<p>
+
+Microsoft Certified
+
+</p>
+
+</div>
+
+</section>
+
+<!--================ EDUCATION ================-->
+
+<section id="education">
+
+<h2 class="section-title">
+
+Education
+
+</h2>
+
+<div class="education-card">
+
+<h3>
+
+Integrated M.Tech in Computer Science & Engineering
+
+</h3>
+
+<p>
+
+VIT-AP University
+
+</p>
+
+</div>
+
+</section>
+
+<!--================ CONTACT ================-->
+
+<section id="contact">
+
+<h2 class="section-title">
+
+Contact Me
+
+</h2>
+
+<div class="contact-box">
+
+<p>
+
+📧 ragulm175@gmail.com
+
+</p>
+
+<p>
+
+📱 +91 8072428283
+
+</p>
+
+<p>
+
+📍 India
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Ragul M • DevOps & Cloud Engineer
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
